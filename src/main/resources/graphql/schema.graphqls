@@ -1,0 +1,14 @@
+type Query {
+    getAllUsers: [User]
+}
+
+type Mutation {
+    login(username: String, password: String) : String
+}
+
+type User {
+    id: ID
+    userName: String
+    password: String
+    role: String
+}
